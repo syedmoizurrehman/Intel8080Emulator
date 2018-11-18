@@ -143,6 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Intel8080.h" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>

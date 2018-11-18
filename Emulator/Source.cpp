@@ -6,6 +6,7 @@
 #include <string>
 #include <sstream>
 #include <iomanip>
+#include "Intel8080.h"
 
 using namespace std;
 
@@ -21,38 +22,6 @@ string ToHex(const string& s, bool upper_case = true)
 	}
 
 	return ret.str();
-}
-
-struct Intel8080
-{
-	uint16_t SP;			// SP is 16-bit
-	uint16_t PC;			// PC is 16-bit
-	uint8_t Memory[65536];	// 8-bit array to represent memory/RAM. Since address bus' width is 16-bit, memory can only consist of 2^16 bytes.
-}* CPU = new Intel8080;
-
-void Execute()
-{
-	//unsigned char* Opcode = &CPU->Memory[CPU->PC];
-	uint8_t Opcode = CPU->Memory[CPU->PC];
-
-	switch (Opcode)
-	{
-
-		case 0x00:		// NOP
-			break;
-
-		case 0x01:		//
-			break;
-
-		case 0xFF:		//
-			break;
-
-		default:
-			break;
-	}
-
-	CPU->PC += 1;		// Advance to next byte.
-
 }
 
 int Disassemble8080Opcode(unsigned char *codebuffer, int pc)
@@ -85,6 +54,25 @@ int Disassemble8080Opcode(unsigned char *codebuffer, int pc)
 
 int main()
 {
+	Intel8080* CPU = new Intel8080;
+	Reg8 R1;
+	auto X = R1[0];
+	
+	uint8_t A = 0xFF;
+	uint8_t B = 0xFF;
+	
+	X = ((A & 0xF) + (B & 0xF)) > 0xF;
+
+	uint16_t R = A;
+	R = A << 8 | B;
+
+	R = R & 0x80;
+
+	CPU->Z = 5;
+	CPU->Z = A == 0;
+	CPU->S = (A & 0x80) == 0x80;
+
+	CPU->GetRegAddr(A, B);
 	fstream::pos_type size;
 	unsigned char * InstructionMemory;
 

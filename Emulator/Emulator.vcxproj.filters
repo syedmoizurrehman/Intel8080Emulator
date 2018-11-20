@@ -16,6 +16,9 @@
     <Filter Include="Rom Files">
       <UniqueIdentifier>{6bacc68c-fa41-4fa7-a820-ce560bf80b51}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Documents">
+      <UniqueIdentifier>{2df55f07-86fd-4ec6-84ec-5402ab9caaab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -34,6 +37,12 @@
     </None>
     <None Include="..\Rom Files\invaders.g">
       <Filter>Rom Files</Filter>
+    </None>
+    <None Include="..\Documents\Intel 8080 Microcomputer Systems Users Manual.pdf">
+      <Filter>Documents</Filter>
+    </None>
+    <None Include="..\Documents\8080 Programmers Manual.pdf">
+      <Filter>Documents</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -149,6 +149,7 @@
   <ItemGroup>
     <None Include="..\Documents\8080 Programmers Manual.pdf" />
     <None Include="..\Documents\Intel 8080 Microcomputer Systems Users Manual.pdf" />
+    <None Include="..\README.md" />
     <None Include="..\Rom Files\invaders.e" />
     <None Include="..\Rom Files\invaders.f" />
     <None Include="..\Rom Files\invaders.g" />

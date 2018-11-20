@@ -44,6 +44,7 @@
     <None Include="..\Documents\8080 Programmers Manual.pdf">
       <Filter>Documents</Filter>
     </None>
+    <None Include="..\README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Rom Files\invaders.h">

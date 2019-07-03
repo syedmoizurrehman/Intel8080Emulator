@@ -14,41 +14,46 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="Rom Files">
-      <UniqueIdentifier>{6bacc68c-fa41-4fa7-a820-ce560bf80b51}</UniqueIdentifier>
+      <UniqueIdentifier>{8bac67d0-3a22-449a-9609-21870e5fd2e6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Documents">
-      <UniqueIdentifier>{2df55f07-86fd-4ec6-84ec-5402ab9caaab}</UniqueIdentifier>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{8b259693-f19e-4d05-bc44-0c5016ef6015}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Intel8080.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Intel8080.h">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Rom Files\invaders.e">
-      <Filter>Rom Files</Filter>
-    </None>
-    <None Include="..\Rom Files\invaders.f">
-      <Filter>Rom Files</Filter>
-    </None>
-    <None Include="..\Rom Files\invaders.g">
-      <Filter>Rom Files</Filter>
-    </None>
-    <None Include="..\Documents\Intel 8080 Microcomputer Systems Users Manual.pdf">
-      <Filter>Documents</Filter>
-    </None>
-    <None Include="..\Documents\8080 Programmers Manual.pdf">
-      <Filter>Documents</Filter>
-    </None>
-    <None Include="..\README.md" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\Rom Files\invaders.h">
+    <ClInclude Include="Intel8080.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rom Files\invaders.h">
       <Filter>Rom Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Rom Files\invaders.g">
+      <Filter>Rom Files</Filter>
+    </None>
+    <None Include="Rom Files\invaders.e">
+      <Filter>Rom Files</Filter>
+    </None>
+    <None Include="Rom Files\invaders.f">
+      <Filter>Rom Files</Filter>
+    </None>
+    <None Include="Tests\cpudiag.asm">
+      <Filter>Tests</Filter>
+    </None>
+    <None Include="Tests\cpudiag.bin">
+      <Filter>Tests</Filter>
+    </None>
+    <None Include="Tests\test.com">
+      <Filter>Tests</Filter>
+    </None>
   </ItemGroup>
 </Project>

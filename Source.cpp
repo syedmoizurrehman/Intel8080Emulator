@@ -30,7 +30,7 @@ vector<char> ReadObjectFile(string Filename)
 {
 	fstream::pos_type size;
 	char* FileContent = nullptr;
-	string FilePath = "Tests\\";
+	string FilePath = "Tests\\Loop Test\\";
 	FilePath.append(Filename);
 	fstream BinaryFile(FilePath.c_str(), ios::in | ios::binary | ios::ate);
 	if (BinaryFile.is_open())
@@ -57,7 +57,7 @@ int main()
 
 	//CPU->Memory = new uint8_t[0x10000];
 
-	vector<char> Temp = ReadObjectFile("test.com");
+	vector<char> Temp = ReadObjectFile("LoopTest.bin");
 	int i = 0;
 	for (auto T : Temp)
 		CPU->Memory[i++] = T;

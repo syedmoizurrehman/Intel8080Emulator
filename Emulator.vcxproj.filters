@@ -19,6 +19,9 @@
     <Filter Include="Tests">
       <UniqueIdentifier>{8b259693-f19e-4d05-bc44-0c5016ef6015}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tests\Loop Test">
+      <UniqueIdentifier>{f3395e4a-0104-480a-a84c-dec25a32a25f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Intel8080.cpp">
@@ -52,8 +55,11 @@
     <None Include="Tests\cpudiag.bin">
       <Filter>Tests</Filter>
     </None>
-    <None Include="Tests\test.com">
-      <Filter>Tests</Filter>
+    <None Include="Tests\Loop Test\LoopTest.bin">
+      <Filter>Tests\Loop Test</Filter>
+    </None>
+    <None Include="Tests\Loop Test\LoopTest.asm">
+      <Filter>Tests\Loop Test</Filter>
     </None>
   </ItemGroup>
 </Project>

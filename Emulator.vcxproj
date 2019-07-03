@@ -164,7 +164,8 @@
     <None Include="Rom Files\invaders.g" />
     <None Include="Tests\cpudiag.asm" />
     <None Include="Tests\cpudiag.bin" />
-    <None Include="Tests\test.com" />
+    <None Include="Tests\Loop Test\LoopTest.asm" />
+    <None Include="Tests\Loop Test\LoopTest.bin" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

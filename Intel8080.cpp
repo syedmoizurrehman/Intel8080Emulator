@@ -504,7 +504,7 @@ void Intel8080::RefreshFlags(uint8_t Operand1, uint8_t Operand2, CPUOperation Op
 
 void Intel8080::RefreshFlags(uint8_t Operand1, uint8_t Operand2, uint8_t Operand3, CPUOperation Operation)
 {
-	uint16_t Result;
+	uint16_t Result = 0;
 	switch (Operation)
 	{
 	case CPUOperation::Add: Result = (uint16_t)Operand1 + (uint16_t)Operand2 + (uint16_t)Operand3; break;
